@@ -4,9 +4,9 @@
 # ucrData
 
 <!-- badges: start -->
-<!-- badges: end -->
 
-# `ucrData` R Package
+[![R-CMD-check](https://github.com/ceoe-unifesp/ucrData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ceoe-unifesp/ucrData/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 ## Overview
 
