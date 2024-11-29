@@ -1,12 +1,14 @@
 Package: ucrData
-Title: What the Package Does (One Line, Title Case)
+Title: Retrieve and Parse Supplementary Homicide Reports (SHR) Data
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+    person("Julio", "Trecenti", , "julio.trecenti@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1680-6389")),
+    person("Ivan", "Ribeiro", , "iribeiro@unifesp.br", role = "aut"),
+    person("CEOE-Unifesp", role = c("cph", "fnd"))
+  )
+Description: Provides tools to download, extract, and parse Supplementary Homicide Reports (SHR) data from the FBI's Uniform Crime Reporting (UCR) program. It includes functions to automate fetching data for specific years, handling fixed-width file formats, and loading data into tidy R structures for analysis.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
@@ -15,3 +17,11 @@ Depends:
 LazyData: true
 URL: https://github.com/ceoe-unifesp/ucrData
 BugReports: https://github.com/ceoe-unifesp/ucrData/issues
+Imports: 
+    fs,
+    glue,
+    httr,
+    purrr,
+    readr,
+    usethis,
+    zip
